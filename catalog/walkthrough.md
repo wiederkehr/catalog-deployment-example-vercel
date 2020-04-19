@@ -1,6 +1,6 @@
-# Publish Catalog on Netlify
+# Publish Catalog on Zeit
 
-Example for creating and publishing an instance of [Catalog](https://catalog.style/) using [Netlify](https://www.netlify.com/).
+Example for creating and publishing an instance of [Catalog](https://catalog.style/) using [Zeit](https://zeit.co/).
 
 ## 1. Install Catalog
 
@@ -10,18 +10,19 @@ Example for creating and publishing an instance of [Catalog](https://catalog.sty
 
 For more details about how to use Catalog, check out the [documentation](https://docs.catalog.style/).
 
-## 2. Configure Netlify
+## 2. Configure Zeit
 
-1. Create a new site on Netlify following these [three easy steps](https://app.netlify.com/start).
-2. Add the script `yarn catalog-build` as the build command and `catalog/build` as the publish directory.
+1. Import a project on Zeit following these [instructions](https://zeit.co/docs/v2/git-integrations/zeit-now-for-github).
+2. Leave the root directory field empty.
+3. Add the script `yarn catalog-build` as the build command and `catalog/build` as the output directory.
 
 ```image
 plain: true
 span: 4
-src: "/netlify-build-settings.png"
+src: "/zeit-build-settings.png"
 ```
 
-## 3. Publish to Netlify
+## 3. Publish to Zeit
 
 - Everytime you push new code to the `master` branch, your Catalog will be deployed automatically.
-- You can set up a custom domain for your site and secure it with HTTPS on Netlify.
+- You can set up a custom domain for your site on Zeit.
