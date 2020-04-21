@@ -1,6 +1,6 @@
-# Publish Catalog on Zeit
+# Publish Catalog on Vercel
 
-Example for creating and publishing an instance of [Catalog](https://catalog.style/) using [Zeit](https://zeit.co/).
+Example for creating and publishing an instance of [Catalog](https://catalog.style/) using [Vercel](https://vercel.com/).
 
 ## 1. Install Catalog
 
@@ -10,15 +10,15 @@ Example for creating and publishing an instance of [Catalog](https://catalog.sty
 
 For more details about how to use Catalog, check out the [documentation](https://docs.catalog.style/).
 
-## 2. Configure Zeit
+## 2. Configure Vercel
 
-1. Import a project on Zeit following these [instructions](https://zeit.co/docs/v2/git-integrations/zeit-now-for-github).
+1. Import a project on Vercel following these [instructions](https://vercel.com/docs/v2/git-integrations/vercel-for-github).
 2. Leave the root directory field empty.
 3. Add the script `yarn catalog-build` as the build command and `catalog/build` as the output directory.
 
-![Zeit build settings](https://github.com/wiederkehr/catalog-deployment-example-zeit/raw/master/catalog/static/zeit-build-settings.png "Zeit build settings")
+![Vercel build settings](https://github.com/wiederkehr/catalog-deployment-example-vercel/raw/master/catalog/static/vercel-build-settings.png "Vercel build settings")
 
-## 3. Publish to Zeit
+## 3. Publish to Vercel
 
 - Everytime you push new code to the `master` branch, your Catalog will be deployed automatically.
-- You can set up a custom domain for your site on Zeit.
+- You can set up a custom domain for your site on Vercel.
